@@ -11,10 +11,10 @@ form.addEventListener('input', event => {
 });
 
 form.addEventListener('submit', event => {
-  event.preventDefault;
+  event.preventDefault();
 
   if (validateForm()) {
-    form.submit;
+    form.submit();
   } else {
     alert('Please fill in all the form fields in order to submit it!');
   }
