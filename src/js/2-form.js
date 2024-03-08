@@ -12,17 +12,15 @@ form.addEventListener('input', event => {
 
 form.addEventListener('submit', event => {
   event.preventDefault();
-
+  console.log({
+    message: event.target.elements.message.value,
+    email: event.target.elements.email.value,
+  });
   if (validateForm()) {
     form.submit();
   } else {
     alert('Please fill in all the form fields in order to submit it!');
   }
-
-  console.log({
-    message: event.target.elements.message.value,
-    email: event.target.elements.email.value,
-  });
 
   localStorage.removeItem(localStorageKey);
   form.reset();

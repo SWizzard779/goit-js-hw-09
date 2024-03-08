@@ -6,77 +6,8 @@
 */
 @import url('./reset.css');
 @import url("simplelightbox/dist/simple-lightbox.min.css");
+@import url("./gallery.css");
+@import url('./form.css')
 
 
-.gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-  list-style: none;
-  width: 50%;
-}
 
-.gallery-item {
-  width: calc((100% - 32px) /3);
-  margin: 0 auto;
-  position: relative;
-}
-
-.gallery-image {
-  width: 360px;
-  object-fit: contain;
-  
-}
-.feedback-form {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 16px;
-  border: #2e2f42 solid 1px;
-  border-radius: 8px;
-    padding: 24px;
-    width: 408px;
-    height: 296px;
-    background-color: #fefefe;
-}
-
-label {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  width: 360px;
-  color: #2e2f42;
-}
-
-input {
-  margin-top: 8px;
-}
-
-textarea {
-  margin-top: 8px;
-  color: #2e2f42;
-}
-
-button {
-  display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 10px;
-    border-radius: 8px;
-      padding: 8px 16px;
-      width: 95px;
-      height: 40px;
-      background-color: #4e75ff;
-      border-style: none;
-      color: #fefefe;
-      transition: background-color 250ms ease-in-out;
-}
-
-button:hover {
-  background-color: #6c8cff;;
-}
